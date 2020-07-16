@@ -46,19 +46,19 @@ aria2c -S input_file.torrent
 
 <b>metalink 文件格式::</b>
 
-<?xml version="1.0" encoding="utf-8"?>
-<metalink xmlns="urn:ietf:params:xml:ns:metalink">
-  <origin dynamic="false">文件http / https / FTP 链接</origin>
-  <generator>发布者</generator>
-  <published>发布时间，如：2020-07-15T22:49:42Z</published>
-  <file name="文件名">
-    <description>文件描述</description>
-    <size>文件大小，文件基本信息内的大小</size>
-    <hash type="md5">md5加密值，命令md5，如：7ce944e72074154248058a1292aa79d8</hash>
-    <hash type="btih">bt种子生成magnet时的加密值，如：a8c93686d09cab35b04e648dab805d2b9165e23e</hash>
-    <hash type="sha-256">sha-256加密值，命令shasum，如：7027880efd8b1e6abaa8f5919a3146878c457a38702281bba132c6f6f5bcd1ee</hash>
-    <url location="" priority="30">文件http / https / FTP 链接，此元素可以多个，每个链接到最终文件要是同一个文件</url>
-    <metaurl mediatype="torrent" priority="2">种子链接</metaurl>
-    <metaurl mediatype="magnet" priority="2">magnet链接，如：magnet:?xt=urn:btih:a8c93686d09cab35b04e648dab805d2b9165e23e</metaurl>
-  </file>
-</metalink>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;metalink xmlns="urn:ietf:params:xml:ns:metalink"&gt;
+  &lt;origin dynamic="false"&gt;文件http / https / FTP 链接&lt;/origin&gt;
+  &lt;generator&gt;发布者&lt;/generator&gt;
+  &lt;published&gt;发布时间，如：2020-07-15T22:49:42Z&lt;/published&gt;
+  &lt;file name="文件名"&gt;
+    &lt;description&gt;文件描述&lt;/description&gt;
+    &lt;size&gt;文件大小，文件基本信息内的大小&lt;/size&gt;
+    &lt;hash type="md5"&gt;md5加密值，命令md5，如：7ce944e72074154248058a1292aa79d8&lt;/hash&gt;
+    &lt;hash type="btih"&gt;bt种子生成magnet时的加密值，如：a8c93686d09cab35b04e648dab805d2b9165e23e&lt;/hash&gt;
+    &lt;hash type="sha-256"&gt;sha-256加密值，命令shasum，如：7027880efd8b1e6abaa8f5919a3146878c457a38702281bba132c6f6f5bcd1ee&lt;/hash&gt;
+    &lt;url location="" priority="30"&gt;文件http / https / FTP 链接，此元素可以多个，每个链接到最终文件要是同一个文件&lt;/url&gt;
+    &lt;metaurl mediatype="torrent" priority="2"&gt;种子链接&lt;/metaurl&gt;
+    &lt;metaurl mediatype="magnet" priority="2"&gt;magnet链接，如：magnet:?xt=urn:btih:a8c93686d09cab35b04e648dab805d2b9165e23e&lt;/metaurl&gt;
+  &lt;/file&gt;
+&lt;/metalink&gt;

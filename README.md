@@ -31,7 +31,7 @@ yaaw:
 <b>声明::</b><br>
 本项目为穿墙模式的一种试探，所有方法与技术实现不向爆料革命战友保留版权，任何爆料革命战友都可以用相同的方式传播爆料革命。如果有战友能够将此方法转为一键脚本，最好能与本项目作者沟通，因项目还在一步步完善。
 
-<b>MAC系统批量生成::</b><br>
+<b>MAC系统批量生成::</b>(正在准备一键指脚本，以下为脚本基本命令)<br>
 1. 安装 homebrew:
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 2. 安装aria2:

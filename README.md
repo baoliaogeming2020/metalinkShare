@@ -1,9 +1,6 @@
-<style>
-  .h1txt{color:green;font-size:14px)
-</style>
 本项目所有文档为郭先生音频，通过支持 metalink 协议的下载软件下载音频，可以帮助向墙内战友传播。
 
-<span class="h1txt">原理::</span>
+<span style="color:green;font-size:14px;">原理::</span>
 
 metalink 下载协议支持 HTTP / FTP / Bittorrent 同时下载同一个文件，墙外战友在下载时可以通过Bittorrent向墙内分享流量，墙外战友下载同一个文件人数越多，墙内战友下载速度赶快。
 

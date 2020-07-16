@@ -7,6 +7,7 @@ metalink 是 xml 文件，内含相同文件的 HTTP / FTP / Bittorrent 链接�
 
 <b>下载方式::</b><br>
 墙外战友下载：aria2c https://github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink
+
 墙内战友下载：aria2c magnet:?xt=urn:btih:A8C93686D09CAB35B04E648DAB805D2B9165E23E
 
 <b>tracker 服务器网站::</b><br>
@@ -17,8 +18,11 @@ https://github.com/P3TERX/aria2.conf
 
 <b>支持 metalink 软件汇总::</b><br>
 aria2:是一款自由、跨平台命令行下载管理器，支持的下载协议有：HTTP / HTTPS / FTP / Bittorrent / Metalink。无 shell 基础战友不建议使用。
+
 AriaNg:
+
 aria2webui:
+
 yaaw:
 
 <b>本项目文件发布::</b><br>

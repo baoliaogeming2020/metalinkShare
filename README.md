@@ -29,11 +29,36 @@ yaaw:
 
 本项目为穿墙模式的一种试探，所有方法与技术实现不向爆料革命战友保留版权，任何爆料革命战友都可以用相同的方式传播爆料革命。如果有战友能够将此方法转为一键脚本，最好能与本项目作者沟通，因项目还在一步步完善。
 
-<b>MAC系统指生成::</b>
+<b>MAC系统批量生成::</b>
 
+1. 安装 homebrew:
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2. 安装aria2:
+brew install aria2
+3. 安装mktorrent:
+brew insatll mktorrent
+4. 生成torrent:
+mktorrent input_file
+5. 生成magnet:
+aria2c -S input_file.torrent
+6. 生成metalink:
+正准备写个脚本
 
+<b>metalink 文件格式::</b>
 
-
-
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<metalink xmlns="urn:ietf:params:xml:ns:metalink">
+  <origin dynamic="false">文件http / https / FTP 链接</origin>
+  <generator>发布者</generator>
+  <published>发布时间，如：2020-07-15T22:49:42Z</published>
+  <file name="文件名">
+    <description>文件描述</description>
+    <size>文件大小，文件基本信息内的大小</size>
+    <hash type="md5">md5加密值，命令md5，如：7ce944e72074154248058a1292aa79d8</hash>
+    <hash type="btih">bt种子生成magnet时的加密值，如：a8c93686d09cab35b04e648dab805d2b9165e23e</hash>
+    <hash type="sha-256">sha-256加密值，命令shasum，如：7027880efd8b1e6abaa8f5919a3146878c457a38702281bba132c6f6f5bcd1ee</hash>
+    <url location="" priority="30">文件http / https / FTP 链接，此元素可以多个，每个链接到最终文件要是同一个文件</url>
+    <metaurl mediatype="torrent" priority="2">种子链接</metaurl>
+    <metaurl mediatype="magnet" priority="2">magnet链接，如：magnet:?xt=urn:btih:a8c93686d09cab35b04e648dab805d2b9165e23e</metaurl>
+  </file>
+</metalink>

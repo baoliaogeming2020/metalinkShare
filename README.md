@@ -54,11 +54,11 @@ aria2c -S input_file.torrent
   &lt;file name="文件名"&gt;<br>
     &lt;description&gt;文件描述&lt;/description&gt;<br>
     &lt;size&gt;文件大小，文件基本信息内的大小&lt;/size&gt;<br>
-    &lt;hash type="md5"&gt;md5加密值，命令md5，如：7ce944e72074154248058a1292aa79d8&lt;/hash&gt;<br>
-    &lt;hash type="btih"&gt;bt种子生成magnet时的加密值，如：a8c93686d09cab35b04e648dab805d2b9165e23e&lt;/hash&gt;<br>
-    &lt;hash type="sha-256"&gt;sha-256加密值，命令shasum，如：7027880efd8b1e6abaa8f5919a3146878c457a38702281bba132c6f6f5bcd1ee&lt;/hash&gt;<br>
+    &lt;hash type="md5"&gt;md5加密值，命令md5&lt;/hash&gt;<br>
+    &lt;hash type="btih"&gt;bt种子生成magnet时的加密值&lt;/hash&gt;<br>
+    &lt;hash type="sha-256"&gt;sha-256加密值，命令shasum&lt;/hash&gt;<br>
     &lt;url location="" priority="30"&gt;文件http / https / FTP 链接，此元素可以多个，每个链接到最终文件要是同一个文件&lt;/url&gt;<br>
     &lt;metaurl mediatype="torrent" priority="2"&gt;种子链接&lt;/metaurl&gt;<br>
-    &lt;metaurl mediatype="magnet" priority="2"&gt;magnet链接，如：magnet:?xt=urn:btih:a8c93686d09cab35b04e648dab805d2b9165e23e&lt;/metaurl&gt;<br>
+    &lt;metaurl mediatype="magnet" priority="2"&gt;magnet链接，如：magnet:?xt=urn:btih:a8c9...e&lt;/metaurl&gt;<br>
   &lt;/file&gt;<br>
 &lt;/metalink&gt;

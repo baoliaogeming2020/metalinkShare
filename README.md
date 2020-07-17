@@ -46,19 +46,4 @@ aria2c -S input_file.torrent
 正准备写个脚本
 
 <b>metalink 文件格式::</b><br>
-&lt;?xml version="1.0" encoding="utf-8"?&gt;<br>
-&lt;metalink xmlns="urn:ietf:params:xml:ns:metalink"&gt;<br>
-  &lt;origin dynamic="false"&gt;文件http / https / FTP 链接&lt;/origin&gt;<br>
-  &lt;generator&gt;发布者&lt;/generator&gt;<br>
-  &lt;published&gt;发布时间，如：2020-07-15T22:49:42Z&lt;/published&gt;<br>
-  &lt;file name="文件名"&gt;<br>
-    &lt;description&gt;文件描述&lt;/description&gt;<br>
-    &lt;size&gt;文件大小，文件基本信息内的大小&lt;/size&gt;<br>
-    &lt;hash type="md5"&gt;md5加密值，命令md5&lt;/hash&gt;<br>
-    &lt;hash type="btih"&gt;bt种子生成magnet时的加密值&lt;/hash&gt;<br>
-    &lt;hash type="sha-256"&gt;sha-256加密值，命令shasum&lt;/hash&gt;<br>
-    &lt;url location="" priority="30"&gt;文件http / https / FTP 链接，此元素可以多个，每个链接到最终文件要是同一个文件&lt;/url&gt;<br>
-    &lt;metaurl mediatype="torrent" priority="2"&gt;种子链接&lt;/metaurl&gt;<br>
-    &lt;metaurl mediatype="magnet" priority="2"&gt;magnet链接，如：magnet:?xt=urn:btih:a8c9...e&lt;/metaurl&gt;<br>
-  &lt;/file&gt;<br>
-&lt;/metalink&gt;
+参考文件<a href="blob/master/metalink-format.metalink">metalink-format.metalink</a>

@@ -40,7 +40,7 @@ mktorrent input_file
 5. 生成magnet:<br>
 aria2c -S input_file.torrent
 6. 生成metalink:<br>
-正准备写个脚本
+<a href="mkmetalink.sh">单文件生成脚本</a>
 
 <b>metalink 文件格式::</b><br>
 参考文件<a href="metalink-format.metalink">metalink-format.metalink</a>

@@ -3,10 +3,10 @@
 
 <b>声明::</b><br>
 本项目为穿墙模式的一种试探，所有方法与技术实现不向爆料革命战友保留版权，任何爆料革命战友都可以用相同的方式传播爆料革命。如果有战友能够将此方法转为一键脚本，最好能与本项目作者沟通，因项目还在进一步完善。<br>
-如有爆料革命主播想将音视频存储从MEGA网盘转到GitHub，以方便穿墙传播，本人可以提供全程技术支持，请在评论区留言。
+如有爆料革命主播想将音视频存储方式从MEGA网盘转到GitHub，以方便穿墙传播，本人可以提供全程技术支持，请在评论区留言。
 
 <b>原理::</b><br>
-metalink 下载协议支持 HTTP / FTP / Bittorrent 同时下载同一个文件，墙外战友在下载时可以通过Bittorrent向墙内分享流量，墙外战友下载同一个文件人数越多，墙内战友下载速度赶快。<br>
+metalink 下载协议支持 HTTP / FTP / Bittorrent 同时下载同一个文件，墙外战友在下载时可以通过Bittorrent向墙内分享流量，墙外战友下载同一个文件人数越多，墙内战友下载速度越快。<br>
 metalink 是 xml 文件，内含相同文件的 HTTP / FTP / Bittorrent 链接，Bittorrent 以 btih 加密 hash 方式写入，而此 btih-hash 与 magnet-btih 完全相同，这样，墙外战友下载后可以直接将 btih-hash 构造成 magnet 文本后向墙内战友传播，墙内战友直接可以下载。而 magnet 首先会下载一个 Bittorrent 种子，然后可以通过所有 Bittorrent 软件进行下载。GFW 是无法完全封锁 Bittorrent 软件的 tracker 服务器和 DHT 路由。
 
 <b>下载方式::</b><br>

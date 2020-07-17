@@ -12,5 +12,5 @@
 		<url location="" priority="30">文件http / https / FTP 链接，此元素可以多个，每个链接到最终文件要是同一个文件</url>
 		<metaurl mediatype="torrent" priority="2">种子链接</metaurl>
 		<metaurl mediatype="magnet" priority="2">magnet链接，如：magnet:?xt=urn:btih:a8c9...e</metaurl>
-		</file>
+	</file>
 </metalink>

@@ -46,4 +46,4 @@ aria2c -S input_file.torrent
 正准备写个脚本
 
 <b>metalink 文件格式::</b><br>
-参考文件<a href="blob/master/metalink-format.metalink">metalink-format.metalink</a>
+参考文件<a href="metalink-format.metalink">metalink-format.metalink</a>

@@ -1,4 +1,4 @@
-本项目目的是通过 metalink 向墙内传播郭先生爆料革命音视频，通过支持 metalink 协议的下载软件下载音频，可以帮助向墙内战友传播。
+本项目目的是通过 metalink 向墙内传播郭先生爆料革命音视频，通过支持 metalink 协议的下载软件下载音频，可以帮助向墙内战友传播。<br>
 发布文件包括：音视频文件及同名 .torrent / .metalink / .magnet 文件，墙外战友用 metalink 下载能向墙内 torrent / magnet 下载的战友补充流量。
 
 <b>声明::</b><br>

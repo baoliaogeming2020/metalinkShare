@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metalink xmlns="urn:ietf:params:xml:ns:metalink">
+	<origin dynamic="false">文件http / https / FTP 链接</origin>
+	<generator>发布者</generator>
+	<published>发布时间，如：2020-07-15T22:49:42Z</published>
+	<file name="文件名">
+		<description>文件描述</description>
+		<size>文件大小，文件基本信息内的大小</size>
+		<hash type="md5">md5加密值，命令md5</hash>
+		<hash type="btih">bt种子生成magnet时的加密值</hash>
+		<hash type="sha-256">sha-256加密值，命令shasum</hash>
+		<url location="" priority="30">文件http / https / FTP 链接，此元素可以多个，每个链接到最终文件要是同一个文件</url>
+		<metaurl mediatype="torrent" priority="2">种子链接</metaurl>
+		<metaurl mediatype="magnet" priority="2">magnet链接，如：magnet:?xt=urn:btih:a8c9...e</metaurl>
+		</file>
+</metalink>

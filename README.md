@@ -44,3 +44,8 @@ aria2c -S input_file.torrent
 
 <b>metalink 文件格式::</b><br>
 参考文件<a href="metalink-format.metalink">metalink-format.metalink</a>
+
+<b>Sourceforge传播方式</b><br>
+Sourceforge(SF)注册后可提供1000M空间，所有上传文件在无域名的情况下可生成下载链接，SF有20多个备用下载服务器，这些服务器的IP都是不同的，也就是，你上传的每个文件会有20多个下载链接，很适合 metalink 下载加速。<br>
+郭先生、路德、面具的音频基本上平均大小在20M左右，1000MSF空间可以上传50个音频，大概是一个主播近两个月的内容，用 metalink 实现 http 向 BT 注入流量两个月已经可以完成做种分享。<br>
+SF 支持 SCP / Rsync / SFTP / SSH命令，可以实现一键脚本。

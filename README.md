@@ -76,25 +76,24 @@ Motrix：https://motrix.app/
 
 <b>本项目文件发布：</b>
 <pre>
-本网站发布郭先生音频文件同时发布同文件名的 torrent / metalink / magnet 三种下载链接，墙外战友下载时尽量不要用 HTTPS / torrent 模式下载，因为只有 metalink / magnet 能向墙内战友提供流量。
+本网站发布郭先生音频文件同时发布同文件名的 torrent / metalink / magnet 三种下载链接，墙外战友下载时
+尽量不要用 HTTPS / torrent 模式下载，因为只有 metalink / magnet 能向墙内战友提供流量。
 </pre>
 
 <b>MAC系统批量生成：</b>(正在准备一键指脚本，以下为脚本基本命令)
 <pre>
 1. 安装 homebrew：
-<code>
-/usr/bin/ruby -e "$(curl -fsSL https：//raw.githubusercontent.com/Homebrew/install/master/install)"
-</code>
+	/usr/bin/ruby -e "$(curl -fsSL https：//raw.githubusercontent.com/Homebrew/install/master/install)"
 2. 安装aria2：
-brew install aria2
+	brew install aria2
 3. 安装mktorrent：
-brew insatll mktorrent
+	brew insatll mktorrent
 4. 生成torrent：
-mktorrent input_file
+	mktorrent input_file
 5. 生成magnet：
-aria2c -S input_file.torrent
+	aria2c -S input_file.torrent
 6. 生成metalink：
-<a href="mkmetalink.sh">单文件生成脚本</a>
+	<a href="mkmetalink.sh">单文件生成脚本</a>
 </pre>
 
 <b>metalink 文件格式：</b>

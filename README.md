@@ -4,7 +4,7 @@
 战友用 metalink 下载能向墙内 torrent / magnet 下载的战友补充流量。
 </pre>
 
-<b>声明::</b>
+<b>声明：</b>
 <pre>
 本项目为穿墙模式的一种试探，所有方法与技术实现不向爆料革命战友保留版权，任何爆料革命战友都可以用相同的方
 式传播爆料革命。如果有战友能够将此方法转为一键脚本，最好能与本项目作者沟通，因项目还在进一步完善。如有爆
@@ -12,7 +12,7 @@
 言。
 </pre>
 
-<b>原理::</b>
+<b>原理：</b>
 <pre>
 metalink 下载协议支持 HTTP / FTP / Bittorrent 同时下载同一个文件，墙外战友在下载时可以通过BT向墙
 内分享流量，墙外战友下载同一个文件人数越多，墙内战友下载速度越快。 metalink 是 xml 文件，内含相同文件
@@ -31,7 +31,7 @@ torrent / metalink / magnet 三种文件，一并上传，然后向墙外分享 
 链接。
 </pre>
 
-<b><a href="https://sourceforge.net/projects/guide4me/">Sourceforge传播方式示例</a>::</b>
+<b><a href="https：//sourceforge.net/projects/guide4me/">Sourceforge传播方式示例</a>：</b>
 <pre>
 Sourceforge(SF)注册后建 project 可提供 1000M 空间，所有上传文件在无域名的情况下可生成下载链接，SF
 有 20 多个<a href="SF-dl-server.txt">备用下载服务器</a>，这些服务器的IP都是不同的，也就是，你上传的每个文件会有20多个下载链接，很适合
@@ -41,54 +41,54 @@ SF 支持 SCP / Rsync / SFTP / SSH命令，可以实现一键脚本。
 有意思的事：大陆竟然没封锁SF网站。如果不会用metalink，可以直接上传音频，传播链接。
 </pre>
 
-<b>Github传播方式示例::</b>
+<b>Github传播方式示例：</b>
 <pre>
 Github注册后建 project 可上传小于25M的文件，所有上传文件在无域名的情况下可生成下载链接。
 郭先生、路德、面具的音频中大于25M的要分割然后上传。<br>
 分享方式示例：
 <pre>
-	墙外战友下载：aria2c https://github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink 
-	墙内战友下载：aria2c magnet:?xt=urn:btih:A8C93686D09CAB35B04E648DAB805D2B9165E23E
+	墙外战友下载：aria2c https：//github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink 
+	墙内战友下载：aria2c magnet：?xt=urn：btih：A8C93686D09CAB35B04E648DAB805D2B9165E23E
 </pre>
 </pre>
 
-<b>BT服务器::</b>
+<b>BT服务器：</b>
 <pre>
-tracker 服务器网站::https://newtrackon.com/list
-DHT.dat下载::https://github.com/P3TERX/aria2.conf
+tracker 服务器网站：https：//newtrackon.com/list
+DHT.dat 下载的网站：https：//github.com/P3TERX/aria2.conf
 </pre>
 
-<b>支持 metalink 软件汇总::</b>
+<b>支持 metalink 软件汇总：</b>
 <pre>
-aria2: 是一款自由、跨平台命令行下载管理器，支持的下载协议有： HTTP / HTTPS / FTP / Bittorrent / 
+aria2： 是一款自由、跨平台命令行下载管理器，支持的下载协议有： HTTP / HTTPS / FTP / Bittorrent / 
 Metalink。无 shell 基础战友不建议使用。
-AriaNg:
-aria2webui:
-yaaw:
+AriaNg：
+aria2webui：
+yaaw：
 </pre>
 
-<b>本项目文件发布::</b>
+<b>本项目文件发布：</b>
 <pre>
 本网站发布郭先生音频文件同时发布同文件名的 torrent / metalink / magnet 三种下载链接，墙外战友下载时尽量不要用 HTTPS / torrent 模式下载，因为只有 metalink / magnet 能向墙内战友提供流量。
 </pre>
 
-<b>MAC系统批量生成::</b>(正在准备一键指脚本，以下为脚本基本命令)
+<b>MAC系统批量生成：</b>(正在准备一键指脚本，以下为脚本基本命令)
 <pre>
-1. 安装 homebrew:
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-2. 安装aria2:
+1. 安装 homebrew：
+/usr/bin/ruby -e "$(curl -fsSL https：//raw.githubusercontent.com/Homebrew/install/master/install)"
+2. 安装aria2：
 brew install aria2
-3. 安装mktorrent:
+3. 安装mktorrent：
 brew insatll mktorrent
-4. 生成torrent:
+4. 生成torrent：
 mktorrent input_file
-5. 生成magnet:
+5. 生成magnet：
 aria2c -S input_file.torrent
-6. 生成metalink:
+6. 生成metalink：
 <a href="mkmetalink.sh">单文件生成脚本</a>
 </pre>
 
-<b>metalink 文件格式::</b>
+<b>metalink 文件格式：</b>
 <pre>
 参考文件<a href="metalink-format.metalink">metalink-format.metalink</a>
 </pre>

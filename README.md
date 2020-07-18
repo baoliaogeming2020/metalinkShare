@@ -65,6 +65,13 @@ Metalink。无 shell 基础战友不建议使用。
 AriaNg：
 aria2webui：
 yaaw：
+... ...
+</pre>
+
+<b>支持 BT / magnet 软件汇总：</b>
+<pre>
+Motrix：https://motrix.app/
+... ...
 </pre>
 
 <b>本项目文件发布：</b>

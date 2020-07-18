@@ -31,7 +31,7 @@ torrent / metalink / magnet 三种文件，一并上传，然后向墙外分享 
 链接。
 </pre>
 
-<b><a href="https：//sourceforge.net/projects/guide4me/">Sourceforge传播方式示例</a>：</b>
+<b><a href="https：//sourceforge.net/projects/guide4me/">Sourceforge传播方式示例</a>：
 <pre>
 Sourceforge(SF)注册后建 project 可提供 1000M 空间，所有上传文件在无域名的情况下可生成下载链接，SF
 有 20 多个<a href="SF-dl-server.txt">备用下载服务器</a>，这些服务器的IP都是不同的，也就是，你上传的每个文件会有20多个下载链接，很适合
@@ -44,11 +44,11 @@ SF 支持 SCP / Rsync / SFTP / SSH命令，可以实现一键脚本。
 <b>Github传播方式示例：</b>
 <pre>
 Github注册后建 project 可上传小于25M的文件，所有上传文件在无域名的情况下可生成下载链接。
-郭先生、路德、面具的音频中大于25M的要分割然后上传。<br>
+郭先生、路德、面具的音频中大于25M的要分割然后上传。
 分享方式示例：
 <pre>
-	墙外战友下载：aria2c https：//github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink 
-	墙内战友下载：aria2c magnet：?xt=urn：btih：A8C93686D09CAB35B04E648DAB805D2B9165E23E
+墙外战友下载：aria2c https：//github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink 
+墙内战友下载：aria2c magnet：?xt=urn：btih：A8C93686D09CAB35B04E648DAB805D2B9165E23E
 </pre>
 </pre>
 

@@ -1,0 +1,31 @@
+Primary: http://downloads.sourceforge.net
+afr-KE: http://liquidtelecom.dl.sourceforge.net
+asi-IN: http://excellmedia.dl.sourceforge.net
+asi-JP: http://jaist.dl.sourceforge.net
+asi-TW: http://nchc.dl.sourceforge.net
+eur-BG: http://netix.dl.sourceforge.net
+eur-DE: http://netcologne.dl.sourceforge.net
+eur-FR: http://freefr.dl.sourceforge.net
+eur-UK: http://kent.dl.sourceforge.net
+eur-UK: http://vorboss.dl.sourceforge.net
+nam-CA: http://astuteinternet.dl.sourceforge.net
+nam-CA: http://iweb.dl.sourceforge.net
+nam-US: http://10gbps-io.dl.sourceforge.net
+nam-US: http://ayera.dl.sourceforge.net
+nam-US: http://cfhcable.dl.sourceforge.net
+nam-US: http://cytranet.dl.sourceforge.net
+nam-US: http://downloads.sourceforge.net
+nam-US: http://gigenet.dl.sourceforge.net
+nam-US: http://newcontinuum.dl.sourceforge.net
+nam-US: http://phoenixnap.dl.sourceforge.net
+nam-US: http://pilotfiber.dl.sourceforge.net
+nam-US: http://superb-dca2.dl.sourceforge.net
+nam-US: http://svwh.dl.sourceforge.net
+nam-US: http://versaweb.dl.sourceforge.net
+sam-BR: http://razaoinfo.dl.sourceforge.net
+sam-BR: http://ufpr.dl.sourceforge.net
+
+注：
+如果你自己下载获取的链接是：
+https://master.dl.sourceforge.net/project/guide4me/milesaudio/20200628_Miles.mp3
+替换master为其它三级域名都可以实现下载，如果ping每个三级域名，都会得到不同的IP。

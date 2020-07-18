@@ -16,10 +16,10 @@
 <pre>
 metalink 下载协议支持 HTTP / FTP / Bittorrent 同时下载同一个文件，墙外战友在下载时可以通过BT向墙
 内分享流量，墙外战友下载同一个文件人数越多，墙内战友下载速度越快。 metalink 是 xml 文件，内含相同文件
-的 HTTP / FTP / Bittorrent 链接，Bittorrent 以 btih 加密 hash 方式写入，而此 btih-hash    与
-magnet-btih 完全相同，这样，墙外战友下载后可以直接将 btih-hash 构造成 magnet 文本后向墙内战友传播，
-墙内战友直接可以下载。而 magnet 首先会下载一个 Bittorrent 种子，然后可以通过所有 Bittorrent 软件进
-行下载。GFW 是无法完全封锁 Bittorrent 软件的 tracker 服务器和 DHT 路由。
+的 HTTP / FTP / Bittorrent 链接，BT 以 btih 加密 hash 方式写入，此 btih-hash 与magnet-btih 
+完全相同，这样，墙外战友下载后可以直接将 btih-hash 构造成 magnet 文本后向墙内战友传播，墙内战友直接
+可以下载。而 magnet 首先会下载一个 Bittorrent 种子，然后可以通过所有 Bittorrent 软件进行下载。GFW
+是无法完全封锁 Bittorrent 软件的 tracker 服务器和 DHT 路由。
 </pre>
 
 <b>传播方式：</b>

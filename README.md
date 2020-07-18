@@ -12,15 +12,18 @@ metalink 是 xml 文件，内含相同文件的 HTTP / FTP / Bittorrent 链接�
 <b>传播方式：</b><br>
 网上有好多免费空间，只要能够上传文件并生成 http / ftp 下载链接，有无域名都可以传播。本地用脚本批量生成 torrent / metalink / magnet 三种文件，一并上传，然后向墙外分享 metalink 链接，向墙内分享 magnet 链接。
 
-<b>Sourceforge传播方式::</b><br>
-Sourceforge(SF)注册后可提供1000M空间，所有上传文件在无域名的情况下可生成下载链接，SF有20多个<a href="SF-dl-server.txt">备用下载服务器</a>，这些服务器的IP都是不同的，也就是，你上传的每个文件会有20多个下载链接，很适合 metalink 下载加速。<br>
-郭先生、路德、面具的音频基本上平均大小在20M左右，1000MSF空间可以上传50个音频，大概是一个主播近两个月的内容，用 metalink 实现 http 向 BT 注入流量两个月已经可以完成做种分享。<br>
+<b>Sourceforge传播方式示例::</b><br>
+Sourceforge(SF)注册后建 project 可提供1000M空间，所有上传文件在无域名的情况下可生成下载链接，SF有20多个<a href="SF-dl-server.txt">备用下载服务器</a>，这些服务器的IP都是不同的，也就是，你上传的每个文件会有20多个下载链接，很适合 metalink 下载加速。<br>
+郭先生、路德、面具的音频基本上平均大小在20M左右，1000M空间可以上传50个音频，大概是一个主播近两个月的内容，用 metalink 实现 http 向 BT 注入流量两个月已经可以完成做种分享。<br>
 SF 支持 SCP / Rsync / SFTP / SSH命令，可以实现一键脚本。<br>
 有意思的事：大陆竟然没封锁SF网站。如果不会用metalink，可以直接上传音频，传播链接。<br>
 
-<b>下载方式示例::</b><br>
-墙外战友下载：aria2c https://github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink <br>
-墙内战友下载：aria2c magnet:?xt=urn:btih:A8C93686D09CAB35B04E648DAB805D2B9165E23E
+<b>Github传播方式示例::</b><br>
+Github注册后建 project 可上传小于25M的文件，所有上传文件在无域名的情况下可生成下载链接。
+郭先生、路德、面具的音频中大于25M的要分割然后上传。
+分享方式示例：
+  墙外战友下载：aria2c https://github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink <br>
+  墙内战友下载：aria2c magnet:?xt=urn:btih:A8C93686D09CAB35B04E648DAB805D2B9165E23E
 
 <b>tracker 服务器网站::</b><br>
 https://newtrackon.com/list

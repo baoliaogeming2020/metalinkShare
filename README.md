@@ -31,7 +31,7 @@ torrent / metalink / magnet 三种文件，一并上传，然后向墙外分享 
 链接。
 </pre>
 
-<b><a href="https：//sourceforge.net/projects/guide4me/">Sourceforge传播方式示例</a>：
+<b><a href="https：//sourceforge.net/projects/guide4me/">Sourceforge传播方式示例</a>：</b>
 <pre>
 Sourceforge(SF)注册后建 project 可提供 1000M 空间，所有上传文件在无域名的情况下可生成下载链接，SF
 有 20 多个<a href="SF-dl-server.txt">备用下载服务器</a>，这些服务器的IP都是不同的，也就是，你上传的每个文件会有20多个下载链接，很适合

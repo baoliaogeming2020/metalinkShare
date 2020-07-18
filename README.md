@@ -82,7 +82,9 @@ Motrix：https://motrix.app/
 <b>MAC系统批量生成：</b>(正在准备一键指脚本，以下为脚本基本命令)
 <pre>
 1. 安装 homebrew：
+<code>
 /usr/bin/ruby -e "$(curl -fsSL https：//raw.githubusercontent.com/Homebrew/install/master/install)"
+</code>
 2. 安装aria2：
 brew install aria2
 3. 安装mktorrent：

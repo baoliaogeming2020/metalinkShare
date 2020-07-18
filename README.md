@@ -22,8 +22,10 @@ SF 支持 SCP / Rsync / SFTP / SSH命令，可以实现一键脚本。<br>
 Github注册后建 project 可上传小于25M的文件，所有上传文件在无域名的情况下可生成下载链接。<br>
 郭先生、路德、面具的音频中大于25M的要分割然后上传。<br>
 分享方式示例：<br>
+<pre>
 	墙外战友下载：aria2c https://github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink <br>
 	墙内战友下载：aria2c magnet:?xt=urn:btih:A8C93686D09CAB35B04E648DAB805D2B9165E23E<br>
+</pre>
 
 <b>tracker 服务器网站::</b><br>
 https://newtrackon.com/list

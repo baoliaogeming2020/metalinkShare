@@ -5,12 +5,20 @@
 # gitHubLink : 当你上传音视频文件到github时，会生成一个链接，此变量只写绝对路径
 # description : 对单个音视频文件的文字描述
 # generator : 发布人，标明发布音视频的机构或个人
-# 用法：chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file
+# 单文件用法：chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file
+# 文件夹用法：absolutePath="absolute/path/of/folder"; for line in $(ls $absolutePath); do echo $absolutePath"/"$line; ./mkmetalink.sh $absolutePath"/"$line; done;
+
+# 我的Github文件下载目录：https://raw.githubusercontent.com/baoliaogeming2020/audio/master/
+# 我的sourceforge文件下载目录：https://svwh.dl.sourceforge.net/project/guide4me/milesaudio/
+# "svwh"是三级目录，可以用以下三级目录替换，或者全部写入多个<url>...</url>，这样下载速度更快
+# sourceforge下载的三级目录：liquidtelecom/excellmedia/jaist/nchc/netix/netcologne/freefr/kent/vorboss/astuteinternet/iweb/10gbps-io/ayera/cfhcable/cytranet/downloads.sourceforge.net/gigenet/newcontinuum/phoenixnap/pilotfiber/superb-dca2/svwh/versaweb/razaoinfo/ufpr
 
 fileName=$1
 baseName=$(basename $fileName)
 dirName=$(dirname $fileName)
-BTName="."$baseName".torrent"
+BTName=$fileName".torrent"
+MTName=$fileName".metalink"
+MGname=$fileName".magnet"
 
 metalinkFormat=$(cat <<EOF
 <?xml version="1.0" encoding="utf-8"?>
@@ -33,9 +41,12 @@ EOF
 )
 
 gitHubLink="https://raw.githubusercontent.com/baoliaogeming2020/audio/master/"
+SFLink="https://svwh.dl.sourceforge.net/project/guide4me/milesaudio/"
 
-httpLink=$gitHubLink$baseName
+# httpLink=$gitHubLink$baseName
+httpLink=$SFLink$baseName
 BTLink=$httpLink".torrent"
+MTLink=$httpLink".metalink"
 generator="BaodLiaoGeMing2020"
 published=$(date "+%Y-%m-%dT%H:%M:%SZ")
 description="未写入文件描述"
@@ -43,7 +54,8 @@ fileSize=$(ls -l $fileName | awk '{print $5}')
 hashMD5=$(md5 $fileName | awk '{print $4}')
 hashSHA256=$(shasum $fileName | awk '{print $1}')
 
-mktorrent -o $BTName $fileName 1>/dev/null && magnetLink=$(aria2c -S .20200712_Sara.mp3.torrent | awk '/Magnet URI:/{gsub("Magnet URI: ","");print}') && rm -rf $BTName
+mktorrent -o $BTName $fileName 1>/dev/null && magnetLink=$(aria2c -S $BTName | awk '/Magnet URI:/{gsub("Magnet URI: ","");print}')
+
 hashBTIH=$(echo $magnetLink | awk '{gsub(/magnet.+btih:/,"");gsub(/&.+/,"");print}')
 
 metalinkFormat=${metalinkFormat//"_http_link_"/$httpLink}
@@ -58,4 +70,9 @@ metalinkFormat=${metalinkFormat//"_hash_sha256_"/$hashSHA256}
 metalinkFormat=${metalinkFormat//"_torrent_link_"/$BTLink}
 metalinkFormat=${metalinkFormat//"_magnet_link_"/$magnetLink}
 
-echo ${metalinkFormat//"_http_link_"/$gitHubLink}
+echo ${metalinkFormat//"_http_link_"/$gitHubLink} > $MTName
+echo $magnetLink > $MGname
+
+echo $MTLink >> downloadLink.txt
+echo $magnetLink >> downloadLink.txt
+echo "" >> downloadLink.txt

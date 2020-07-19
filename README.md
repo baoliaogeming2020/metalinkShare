@@ -33,7 +33,7 @@ torrent / metalink / magnet 三种文件，一并上传，然后向墙外分享 
 
 <b>Sourceforge传播方式示例：</b>
 <pre>
-https：//sourceforge.net/projects/guide4me/
+https://sourceforge.net/projects/guide4me/
 Sourceforge(SF)注册后建 project 可提供 1000M 空间，所有上传文件在无域名的情况下可生成下载链接，SF
 有 20 多个<a href="SF-dl-server.txt">备用下载服务器</a>，这些服务器的IP都是不同的，也就是，你上传的每个文件会有20多个下载链接，很适合
 metalink 下载加速。郭先生、路德、面具的音频基本上平均大小在 20M 左右，1000M 空间可以上传 50 个音频，
@@ -48,15 +48,15 @@ Github注册后建 project 可上传小于25M的文件，所有上传文件在�
 郭先生、路德、面具的音频中大于25M的要分割然后上传。
 分享方式示例：
 <pre>
-墙外战友下载：aria2c https：//github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink 
-墙内战友下载：aria2c magnet：?xt=urn：btih：A8C93686D09CAB35B04E648DAB805D2B9165E23E
+墙外战友下载：aria2c https://github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink 
+墙内战友下载：aria2c magnet:?xt=urn:btih:A8C93686D09CAB35B04E648DAB805D2B9165E23E
 </pre>
 </pre>
 
 <b>BT服务器：</b>
 <pre>
-tracker 服务器网站：https：//newtrackon.com/list
-DHT.dat 下载的网站：https：//github.com/P3TERX/aria2.conf
+tracker 服务器网站：https://newtrackon.com/list
+DHT.dat 下载的网站：https://github.com/P3TERX/aria2.conf
 </pre>
 
 <b>支持 metalink 软件汇总：</b>
@@ -84,7 +84,7 @@ Motrix：https://motrix.app/
 <b>MAC系统批量生成：</b>(正在准备一键指脚本，以下为脚本基本命令)
 <pre>
 1. 安装 homebrew：
-	/usr/bin/ruby -e "$(curl -fsSL https：//raw.githubusercontent.com/Homebrew/install/master/install)"
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 2. 安装aria2：
 	brew install aria2
 3. 安装mktorrent：

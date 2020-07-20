@@ -5,7 +5,7 @@
 本项目为穿墙模式试探，所有方法与技术实现不向爆料革命战友保留版权，任何爆料革命战友都可以用相同的方式传播爆料革命。  
 如爆料革命主播想将音视频存储方式从 MEGA网盘转到此方式，以方便穿墙传播，本人可以提供全程技术支持，请在评论区留言。  
 # 原理： #
-metalink 协议支持 HTTP / FTP / Bittorrent 同时下载同一个文件，墙外战友在下载时可以通过 BT 向墙内分享流量，墙外战友下载人数越多，墙内速度越快。metalink 是 xml 文件，内含相同文件的 HTTP / FTP / Bittorrent 下载链接，BT 以 btih 加密 hash 方式写入，此 btih-hash 与 magnet-btih 完全相同，这样，墙外战友下载后可以直接将 btih-hash 构造成 magnet 文本后向墙内战友传播，墙内战友直接可以下载。而 magnet 首先会下载一个 Bittorrent 种子，然后可以通过所有 Bittorrent 软件进行下载。某些BT软件在下载 magnet 链接时找种慢，可以用迅雷(虽然有点危险)下载 magnet，这样找种快，然后再用其它BT软件下载此种子文件， __注意__，迅雷在指定下载文件夹内先下载种子，但种子是隐藏文件，要想看到种子需要打开文件夹的显示隐藏功能。  
+metalink 协议支持 HTTP / FTP / Bittorrent 同时下载同一个文件，墙外战友在下载时可以通过 BT 向墙内分享流量，墙外战友下载人数越多，墙内速度越快。metalink 是 xml 文件，内含相同文件的 HTTP / FTP / Bittorrent 下载链接，BT 以 btih 加密 hash 方式写入，此 btih-hash 与 magnet-btih 完全相同，这样，墙外战友下载后可以直接将 btih-hash 构造成 magnet 文本后向墙内战友传播，墙内战友直接可以下载。而 magnet 首先会下载一个 Bittorrent 种子，然后可以通过所有 Bittorrent 软件进行下载。某些BT软件在下载 magnet 链接时找种慢，可以用迅雷(虽然有点危险)下载 magnet，这样找种快，然后再用其它BT软件下载此种子文件， __注意__ ，迅雷在指定下载文件夹内先下载种子，但种子是隐藏文件，要想看到种子需要打开文件夹的显示隐藏功能。  
 GFW 是无法完全封锁 Bittorrent 软件的 tracker 服务器和 DHT 路由。  
 # 传播方式： #
 网上有大量免费空间，只要能够上传文件并生成 http / ftp 下载链接，有无域名都可以传播。本地用脚本批量生成torrent / metalink / magnet 三种文件，一并上传，然后向墙外分享 metalink 链接，向墙内分享 magnet链接。  
@@ -48,10 +48,14 @@ Motrix：<https://motrix.app/>
 4. 执行metalink脚本：  
 [脚本](mkmetalink.sh)  
 \# 单文件用法：  
-\# `chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file`  
+\# `chmod 777 mkmetalink.sh;`  
+\# `./mkmetalink.sh dir/to/file`  
 \# 文件夹用法：  
 \# `absolutePath="absolute/path/of/folder";`  
-\# `for line in $(ls $absolutePath); do echo $absolutePath"/"$line; ./mkmetalink.sh $absolutePath"/"$line; done;`  
+\# `for line in $(ls $absolutePath); do`  
+\# `  echo $absolutePath"/"$line;`  
+\# `  ./mkmetalink.sh $absolutePath"/"$line;`  
+\# ` done;`  
 #### LINUX系统操作步骤： ####  
 正在写，希望战友帮忙...  
 #### WINDOWS系统操作步骤： ####  

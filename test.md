@@ -34,19 +34,20 @@ Motrix：<https://motrix.app/>
 ... ...  
 # 本项目文件发布： #
 本网站发布郭先生音频文件同时发布同文件名的 .torrent / .metalink / .magnet 三种下载链接，墙外战友下载时尽量不要用 https / torrent 模式下载，因为只有 metalink / magnet 能向墙内战友提供流量。  
+[downloadLinkList.txt](downloadLinkList.txt)文件为下载链接列表，内容包括 .metalink 与 magnet 链接。
 # MAC系统批量生成： #
-1. 安装 homebrew：
+1. 安装 homebrew：  
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
-2. 安装aria2：
+2. 安装aria2：  
 `brew install aria2`  
-3. 安装mktorrent：
+3. 安装mktorrent：  
 `brew insatll mktorrent`  
-4. 生成torrent：
+4. 生成torrent：  
 `mktorrent input_file`  
-5. 生成magnet：
+5. 生成magnet：  
 `aria2c -S input_file.torrent`  
-6. 生成metalink：
-[生成脚本](mkmetalink.sh)
+6. 生成metalink：  
+[生成脚本](mkmetalink.sh)  
 \# 单文件用法：`chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file`  
 \# 文件夹用法：`absolutePath="absolute/path/of/folder"; for line in $(ls $absolutePath); do echo $absolutePath"/"$line; ./mkmetalink.sh $absolutePath"/"$line; done;`  
 # metalink 文件格式： #

@@ -10,7 +10,7 @@ GFW 是无法完全封锁 Bittorrent 软件的 tracker 服务器和 DHT 路由�
 # 传播方式： #
 网上有大量免费空间，只要能够上传文件并生成 http / ftp 下载链接，有无域名都可以传播。本地用脚本批量生成torrent / metalink / magnet 三种文件，一并上传，然后向墙外分享 metalink 链接，向墙内分享 magnet链接。  
 ## Sourceforge传播方式示例： ##
-[示例]（https://sourceforge.net/projects/guide4me/）  
+[示例](https://sourceforge.net/projects/guide4me/)  
 Sourceforge(SF)注册后建 project 可提供 1000M 空间，所有上传文件在无域名的情况下可生成下载链接，SF 有 20 多个[备用下载服务器](SF-dl-server.txt)，这些服务器的IP都不相同，也就是，你上传的每个文件会有20多个下载链接，很适合 metalink 下载加速。  
 郭先生、路德、面具的音频基本上平均大小在 20M 左右，1000M 空间可以上传 50 个音频，大概是一个主播近两个月的内容，用 metalink 实现 http 向 BT 注入流量两个月已经可以完成做种分享。  
 SF 支持 SCP / Rsync / SFTP / SSH 命令，可以实现一键脚本。  

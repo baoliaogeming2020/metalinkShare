@@ -18,7 +18,7 @@ SF 支持 SCP / Rsync / SFTP / SSH 命令，可以实现一键脚本。
 #### Github传播方式示例： ####
 Github注册后建 project 可上传小于25M的文件，所有上传文件在无域名的情况下可生成下载链接。郭先生、路德、面具的音频中大于25M的要分割然后上传。  
 ##### 分享方式示例： #####
-墙外战友下载：  `aria2c https://github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink`  
+墙外战友下载：  `aria2c https://home.com/dit/to/file.mp3.metalink`  
 墙内战友下载：  `aria2c magnet:?xt=urn:btih:A8C93686D09CAB35B04E648DAB805D2B9165E23E`  
 # BT服务器： #
 tracker 服务器网站：<https://newtrackon.com/list>  
@@ -47,8 +47,11 @@ Motrix：<https://motrix.app/>
 `brew insatll mktorrent`  
 4. 执行metalink脚本：  
 [脚本](mkmetalink.sh)  
-\# 单文件用法：`chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file`  
-\# 文件夹用法：`absolutePath="absolute/path/of/folder"; for line in $(ls $absolutePath); do echo $absolutePath"/"$line; ./mkmetalink.sh $absolutePath"/"$line; done;`  
+\# 单文件用法：  
+\# `chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file`  
+\# 文件夹用法：  
+\# `absolutePath="absolute/path/of/folder";`  
+\# `for line in $(ls $absolutePath); do echo $absolutePath"/"$line; ./mkmetalink.sh $absolutePath"/"$line; done;`  
 #### LINUX系统操作步骤： ####  
 正在写，希望战友帮忙...  
 #### WINDOWS系统操作步骤： ####  

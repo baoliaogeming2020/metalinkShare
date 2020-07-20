@@ -34,7 +34,7 @@ Motrix：<https://motrix.app/>
 ... ...  
 # 本项目文件发布： #
 本网站发布郭先生音频文件同时发布同文件名的 .torrent / .metalink / .magnet 三种下载链接，墙外战友下载时尽量不要用 https / torrent 模式下载，因为只有 metalink / magnet 能向墙内战友提供流量。  
-[downloadLinkList.txt](downloadLinkList.txt)文件为下载链接列表，内容包括 .metalink 与 magnet 链接。
+向战友分享文件为[downloadLinkList.txt](downloadLinkList.txt)，此文件包括墙内墙外战友下载两种链接格式 .metalink 与 magnet 链接。
 # MAC系统批量生成： #
 1. 安装 homebrew：  
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  

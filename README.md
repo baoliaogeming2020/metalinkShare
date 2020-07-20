@@ -94,7 +94,9 @@ Motrix：https://motrix.app/
 5. 生成magnet：
 	aria2c -S input_file.torrent
 6. 生成metalink：
-	<a href="mkmetalink.sh">单文件生成脚本</a>
+	<a href="mkmetalink.sh">生成脚本</a>
+	# 单文件用法：chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file
+	# 文件夹用法：absolutePath="absolute/path/of/folder"; for line in $(ls $absolutePath); do echo $absolutePath"/"$line; ./mkmetalink.sh $absolutePath"/"$line; done;
 </pre>
 
 <b>metalink 文件格式：</b>

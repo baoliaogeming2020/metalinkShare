@@ -43,3 +43,5 @@ magnet:?xt=urn:btih:58C6E14D5D7A6DCE0A99156F212D16501E418FEA&dn=20200718_Bannon.
 https://svwh.dl.sourceforge.net/project/guide4me/milesaudio/20200718_Sara.mp3.metalink
 magnet:?xt=urn:btih:F64A7D9D146F279E2E09E45DC7C6AB2FD3CD013C&dn=20200718_Sara.mp3
 
+https://svwh.dl.sourceforge.net/project/guide4me/milesaudio/20200719_miles.mp3.metalink
+magnet:?xt=urn:btih:833490E94C81013C7693437DDECCA8E38FA03C91&dn=20200719_miles.mp3

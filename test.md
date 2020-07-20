@@ -38,24 +38,20 @@ Motrix：<https://motrix.app/>
 # 如何参与分享 #  
 在 sourceforge 申请账号，新建项目；将郭先生音视频下载到本地单独文件夹，下载本站[mkmetalink](mkmetalink.sh "现阶段，此脚本只适用MacOS，其它OS请等待")脚本，按此脚本注释执行后会在文件夹内生成每个文件的 .torrent .magnet .metalink 的同名文件，同时生成一个下载列表文件"downLoadList.txt"。下一步就是，把整个文件夹内文件上传到 SF，最后将"downLoadList.txt"文件向战友分享。  
 如果自有网上空间的战友，需要修改"mkmetalink"脚本文件。
-## MAC系统批量生成： ##  
+## MAC系统操作步骤： ##  
 1. 安装 homebrew：  
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
 2. 安装aria2：  
 `brew install aria2`  
 3. 安装mktorrent：  
 `brew insatll mktorrent`  
-4. 生成torrent：  
-`mktorrent input_file`  
-5. 生成magnet：  
-`aria2c -S input_file.torrent`  
-6. 生成metalink：  
-[生成脚本](mkmetalink.sh)  
+4. 执行metalink脚本：  
+[脚本](mkmetalink.sh)  
 \# 单文件用法：`chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file`  
 \# 文件夹用法：`absolutePath="absolute/path/of/folder"; for line in $(ls $absolutePath); do echo $absolutePath"/"$line; ./mkmetalink.sh $absolutePath"/"$line; done;`  
-## LINUX系统批量生成： ##  
-
-## 系统批量生成： ##  
-
+## LINUX系统操作步骤： ##  
+正在写，希望战友帮忙...  
+## WINDOWS系统操作步骤： ##  
+正在写，希望战友帮忙...  
 # metalink 文件格式： #
 参考文件[metalink-format.metalink](metalink-format.metalink)

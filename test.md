@@ -1,36 +1,48 @@
-大标题
-====
-
-小标题
---
-
-# H1标题
-# H1标题 #
-## H2标题
-###### H6标题
-
->区块引用Blockquotes
->Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如果你还熟悉在 email 信件中的引言部分，
->
->>二级区块引用
->>二级区块引用
->
->你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最>前面加上 > ：
-
->你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最>前面加上 > ：
-
->[info] 我是INFO类型引用
-
-文本换行测试  
-文本换行测试  
-文本换行测试
-文本换行测试
-
-1. 后无空格
-2. 后无空格
-
-
-    和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示
-    要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：
-
-要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：
+本项目目的是通过 metalink 向墙内传播郭先生爆料革命音视频，通过支持 metalink 协议的下载软件下载音频，可以帮助向墙内战友传播。发布文件包括：音视频文件及同名 .torrent / .metalink / .magnet 文件，墙外战友用 metalink 下载能向墙内 torrent / magnet 下载的战友补充流量。  
+# 声明：#
+本项目为穿墙模式的一种试探，所有方法与技术实现不向爆料革命战友保留版权，任何爆料革命战友都可以用相同的方式传播爆料革命。如果有战友能够将此方法转为一键脚本，最好能与本项目作者沟通，因项目还在进一步完善。如有爆料革命主播想将音视频存储方式从MEGA网盘转到此方式，以方便穿墙传播，本人可以提供全程技术支持，请在评论区留言。  
+# 原理：#
+metalink 下载协议支持 HTTP / FTP / Bittorrent 同时下载同一个文件，墙外战友在下载时可以通过BT向墙内分享流量，墙外战友下载同一个文件人数越多，墙内战友下载速度越快。 metalink 是 xml 文件，内含相同文件的 HTTP / FTP / Bittorrent 链接，BT 以 btih 加密 hash 方式写入，此 btih-hash 与 magnet-btih 完全相同，这样，墙外战友下载后可以直接将 btih-hash 构造成 magnet 文本后向墙内战友传播，墙内战友直接可以下载。而 magnet 首先会下载一个 Bittorrent 种子，然后可以通过所有 Bittorrent 软件进行下载。某些BT软件在下载 magnet 链接时找到种子需要时间较长，可以用迅雷(虽然有点危险)下载 magnet，这样会获取种子，迅雷获取种子的速度很快，然后再用其它BT软件下载此种子文件，注意，在各操作系统上种子一般都是隐藏文件，要想看到种子需要打开文件夹的显示隐藏功能。GFW 是无法完全封锁 Bittorrent 软件的 tracker 服务器和 DHT 路由。  
+# 传播方式：#
+网上有好多免费空间，只要能够上传文件并生成 http / ftp 下载链接，有无域名都可以传播。本地用脚本批量生成torrent / metalink / magnet 三种文件，一并上传，然后向墙外分享 metalink 链接，向墙内分享 magnet链接。
+# Sourceforge传播方式示例：#
+[示例]（https://sourceforge.net/projects/guide4me/）
+Sourceforge(SF)注册后建 project 可提供 1000M 空间，所有上传文件在无域名的情况下可生成下载链接，SF 有 20 多个<a href="SF-dl-server.txt">备用下载服务器</a>，这些服务器的IP都是不同的，也就是，你上传的每个文件会有20多个下载链接，很适合 metalink 下载加速。郭先生、路德、面具的音频基本上平均大小在 20M 左右，1000M 空间可以上传 50 个音频，大概是一个主播近两个月的内容，用 metalink 实现 http 向 BT 注入流量两个月已经可以完成做种分享。  
+SF 支持 SCP / Rsync / SFTP / SSH命令，可以实现一键脚本。  
+有意思的事：大陆竟然没封锁SF网站。如果不会用metalink，可以直接上传音频，传播链接。  
+# Github传播方式示例：#
+Github注册后建 project 可上传小于25M的文件，所有上传文件在无域名的情况下可生成下载链接。郭先生、路德、面具的音频中大于25M的要分割然后上传。  
+分享方式示例：
+墙外战友下载：  `aria2c https://github.com/baoliaogeming2020/audio/raw/master/20200625_Miles.mp3.metalink`  
+墙内战友下载：  `aria2c magnet:?xt=urn:btih:A8C93686D09CAB35B04E648DAB805D2B9165E23E`  
+# BT服务器：#
+tracker 服务器网站：<https://newtrackon.com/list>  
+DHT.dat 下载的网站：<https://github.com/P3TERX/aria2.conf>  
+# 支持 metalink 软件汇总：#
+aria2： 是一款自由、跨平台命令行下载管理器，支持的下载协议有： HTTP / HTTPS / FTP / Bittorrent / Metalink。无 shell 基础战友不建议使用。  
+AriaNg：  
+aria2webui：  
+yaaw：  
+... ...  
+# 支持 BT / magnet 软件汇总：#
+Motrix：<https://motrix.app/>  
+... ...  
+# 本项目文件发布：#
+本网站发布郭先生音频文件同时发布同文件名的 torrent / metalink / magnet 三种下载链接，墙外战友下载时尽量不要用 HTTPS / torrent 模式下载，因为只有 metalink / magnet 能向墙内战友提供流量。  
+# MAC系统批量生成：#(正在准备一键指脚本，以下为脚本基本命令)
+1. 安装 homebrew：
+	`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
+2. 安装aria2：
+	`brew install aria2`  
+3. 安装mktorrent：
+	`brew insatll mktorrent`  
+4. 生成torrent：
+	`mktorrent input_file`  
+5. 生成magnet：
+	`aria2c -S input_file.torrent`  
+6. 生成metalink：
+	[生成脚本](mkmetalink.sh)
+	\# 单文件用法：`chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file`  
+	\# 文件夹用法：`absolutePath="absolute/path/of/folder"; for line in $(ls $absolutePath); do echo $absolutePath"/"$line; ./mkmetalink.sh $absolutePath"/"$line; done;`  
+# metalink 文件格式：#
+参考文件[metalink-format.metalink](metalink-format.metalink)

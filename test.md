@@ -34,8 +34,11 @@ Motrix：<https://motrix.app/>
 ... ...  
 # 本项目文件发布： #
 本网站发布郭先生音频文件同时发布同文件名的 .torrent / .metalink / .magnet 三种下载链接，墙外战友下载时尽量不要用 https / torrent 模式下载，因为只有 metalink / magnet 能向墙内战友提供流量。  
-向战友分享文件为[downloadLinkList.txt](downloadLinkList.txt)，此文件包括墙内墙外战友下载两种链接格式 .metalink 与 magnet 链接。
-# MAC系统批量生成： #
+向战友分享文件为[downloadLinkList.txt](downloadLinkList.txt)，此文件包括墙内墙外战友下载两种链接格式 .metalink 与 magnet 链接。  
+# 如何参与分享 #  
+在 sourceforge 申请账号，新建项目；将郭先生音视频下载到本地单独文件夹，下载本站[mkmetalink](mkmetalink.sh "现阶段，此脚本只适用MacOS，其它OS请等待")脚本，按此脚本注释执行后会在文件夹内生成每个文件的 .torrent .magnet .metalink 的同名文件，同时生成一个下载列表文件"downLoadList.txt"。下一步就是，把整个文件夹内文件上传到 SF，最后将"downLoadList.txt"文件向战友分享。  
+如果自有网上空间的战友，需要修改"mkmetalink"脚本文件。
+## MAC系统批量生成： ##  
 1. 安装 homebrew：  
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
 2. 安装aria2：  
@@ -50,5 +53,9 @@ Motrix：<https://motrix.app/>
 [生成脚本](mkmetalink.sh)  
 \# 单文件用法：`chmod 777 mkmetalink.sh; ./mkmetalink.sh dir/to/file`  
 \# 文件夹用法：`absolutePath="absolute/path/of/folder"; for line in $(ls $absolutePath); do echo $absolutePath"/"$line; ./mkmetalink.sh $absolutePath"/"$line; done;`  
+## LINUX系统批量生成： ##  
+
+## 系统批量生成： ##  
+
 # metalink 文件格式： #
 参考文件[metalink-format.metalink](metalink-format.metalink)

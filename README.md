@@ -74,7 +74,7 @@
 10. 将文件夹A所有内容上传到你的网上空间  
 11. 手动编写下载列表分享给战友  
 
-<font color=red>在技术群里看到 Madison 和 K.C. 的聊天了，非常感谢，KC 的方案我就直接抄了，Madison 能不能找个战友帮写个 .bat 批量生成脚本，我学了半天，这东西跟 shell 区别太大，写出来 bug 太多。</font>
+    `在技术群里看到 Madison 和 K.C. 的聊天了，非常感谢，KC 的方案我就直接抄了，Madison 能不能找个战友帮写个 .bat 批量生成脚本，我学了半天，这东西跟 shell 区别太大，写出来 bug 太多。`
   
 # metalink 文件格式： #
 　　参考文件[metalink-format.metalink](metalink-format.metalink)

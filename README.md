@@ -39,13 +39,13 @@
 　　在 sourceforge 申请账号，新建项目；将郭先生音视频下载到本地单独文件夹，下载本站[mkmetalink](mkmetalink.sh "现阶段，此脚本只适用MacOS，其它OS请等待")脚本，按此脚本注释执行后会在文件夹内生成每个文件的 .torrent .magnet .metalink 的同名文件，同时生成一个下载列表文件"downLoadList.txt"。下一步就是，把整个文件夹内文件上传到 SF，最后将"downLoadList.txt"文件向战友分享。  
 　　如果自有网上空间的战友，需要修改"mkmetalink"脚本文件。
 #### MAC系统操作步骤： ####  
-　　1. 安装 homebrew：  
+1. 安装 homebrew：  
 　　`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
-　　2. 安装aria2：  
+2. 安装aria2：  
 　　`brew install aria2`  
-　　3. 安装mktorrent：  
+3. 安装mktorrent：  
 　　`brew insatll mktorrent`  
-　　4. 执行metalink脚本：  
+4. 执行metalink脚本：  
 　　[脚本](mkmetalink.sh)  
 　　\# 单文件用法：  
 　　\# `chmod 777 mkmetalink.sh;`  
@@ -57,8 +57,24 @@
 　　\# `  ./mkmetalink.sh $absolutePath"/"$line;`  
 　　\# `done;`  
 #### LINUX系统操作步骤： ####  
-　　正在写，希望战友帮忙...  
+　　会linux的战友，一定能看懂[MAC脚本](mkmetalink.sh)，不写了，基本一样，无非是换几个命令。  
 #### WINDOWS系统操作步骤： ####  
-　　正在写，希望战友帮忙...  
+1. 下载安装WIN版[mktorrent](https://github.com/q3aql/mktorrent-win)  
+    根据你操作系统是32位或64位，直接下载 .7z 软件压缩包，解压到某个目录。  
+2. 下载安装WIN版[aria2](https://github.com/aria2/aria2/releases/tag/release-1.35.0)
+    根据你操作系统是32位或64位，直接下载 .zip 软件压缩包，解压到某个目录。 
+3. 将以上两个软件路径添加PATH
+    参考此网站根据你的操作系统版本[设置PATH](https://www.java.com/zh_CN/download/help/path.xml)  
+4. 下载你要分享的爆料革命音视频文件到文件夹A，cd 命令进入文件夹A  
+5. 执行 mktorrent -o aa.mp3.torrent aa.mp3 会在文件夹A生成种子  
+6. 执行 aria2c -S aa.mp3.torrent 会显示 magnet  
+7. 执行 certutil -hashfile 20200719_miles.mp3 MD5 会显示 MD5
+8. 执行 certutil -hashfile 20200719_miles.mp3 SHA256 会显示 SHA256
+9. 下载 [metalink-format.metalink](metalink-format.metalink) 文件，将 6 - 8 生成的信息、url链接等添加到此文件内  
+10. 将文件夹A所有内容上传到你的网上空间  
+11. 手动编写下载列表分享给战友  
+
+<abbr style="color:red">在技术群里看到 Madison 和 K.C. 的聊天了，非常感谢，KC 的方案我就直接抄了，Madison 能不能找个战友帮写个 .bat 批量生成脚本，我学了半天，这东西跟 shell 区别太大，写出来 bug 太多。</abbr>
+  
 # metalink 文件格式： #
 　　参考文件[metalink-format.metalink](metalink-format.metalink)

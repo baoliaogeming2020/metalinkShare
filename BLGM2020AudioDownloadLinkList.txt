@@ -1,13 +1,8 @@
 # Information #
-请访问<https://github.com/baoliaogeming2020/guide>查看。
-有技术功底的战友可以复制此项目所有文件，并修改链接。可加速墙内战友下载。
-所有音视频收集自VOG提供下载接链，鼓励战友向墙内传播此文件；
+本文档目的是向墙内传播爆料革命音视频。可向墙内战友补种或加速。请访问 <https://github.com/baoliaogeming2020/guide> 查看。本项目对所有爆料革命战友无版权保留，有技术功底的战友可以复制此项目。音视频来自VOG接链，鼓励战友向墙内传播此文件，或者打包种子向墙内传播。
 
 # Description #
-墙外战友下载 metalink 时可以向下载 magnet / torrent 的墙内战友分享流量，墙外下载人数越多，墙内下载速度越快。
-magnet 先下载种子，再下载文件。某些软件下载 magnet 时找种慢，可用迅雷(虽然有点危险)下载获取种子，
-然后用其它 BT 软件下载，各操作系统上种子都是隐藏文件，需要打开文件夹的显示隐藏功能。
-墙外战友向墙内分享时，可下载种子(.torrent)后打包分享，或者，将magnet以文本方式分享。
+墙外战友下载 .metalink 时可以向墙内下载 magnet / .torrent 的战友分享流量，墙外下载人数越多，墙内下载速度越快。magnet 先下载种子，再下载文件。某些软件下载 magnet 时找种慢，可用迅雷(虽然有点危险)下载获取种子，然后用其它 BT 软件下载，各操作系统上种子都是隐藏文件，需要打开文件夹的显示隐藏功能。墙外战友向墙内分享时，可下载种子(.torrent)后打包分享，或者，将magnet以文本方式分享。
 
 # HowToDownload #
 墙外战友：aria2c "https://svwh.dl.sourceforge.net/..._Miles.mp3.metalink"
@@ -18,13 +13,9 @@ magnet 先下载种子，再下载文件。某些软件下载 magnet 时找种�
 访问 <https://github.com/P3TERX/aria2.conf>，下载dat.dat文件，不同软件添加方式不同，请谷歌。
 
 # HowToAddTrackers4magnet #
-访问 <https://newtrackon.com/list> ，复制所有tracker到文本文档
-修改tracker格式，如：udp://public.publictracker.xyz:6969/announce
-改为：&tr=udp%3A%2F%2Fpublic.publictracker.xyz%3A6969%2Fannounce
-修改方法：":"改为"%3A"，"/"改为"%2F"，前边加"&tr="
-将修改后的加到magnet后边，可以加多个。此方法不用找dht.dat文件。
-最终magnet格式为：
-"magnet:?xt=urn:btih:C5...99&dn=file.mp3&tr=udp%3A%2F%2Fhost1.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fhost2%3A6969%2Fannounce"
+访问 <https://newtrackon.com/list> ，复制所有tracker到文本文档修改tracker格式，如：udp://public.publictracker.xyz:6969/announce，改为：&tr=udp%3A%2F%2Fpublic.publictracker.xyz%3A6969%2Fannounce
+修改方法：":"改为"%3A"，"/"改为"%2F"，前边加"&tr="，将修改后的加到magnet后边，可以加多个。此方法不用找dht.dat文件。
+最终magnet格式为："magnet:?xt=urn:btih:C5...99&dn=file.mp3&tr=udp%3A%2F%2Fhost1.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fhost2%3A6969%2Fannounce"
 
 # CreateDate #
 2020年07月21日

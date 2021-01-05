@@ -11,4 +11,4 @@
 ~~删除~~
 <u>下划线</u>
 [GTV链接](https://gtv.org)  
-![](https://gnews.org/wp-content/themes/Gnews/images/GNEWS-LOGO-220.png)
+![](https://gnews.org/wp-content/themes/Gnews/images/GNEW-app-apple.png)
